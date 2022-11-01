@@ -41,7 +41,7 @@
         android:backgroundTint="#FDFCFC"
         android:fontFamily="@font/alfa_slab_one"
         android:text="Sign In"
-        android:textColor="#F8CD05"
+        android:textColor="@color/white"
         android:textColorHighlight="#F8CD05"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"

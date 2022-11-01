@@ -95,11 +95,6 @@
                         android:includeFontPadding="false"
                         android:layout_below="@+id/task_label"
                         android:layout_centerHorizontal="true"/>
-
-
-
-
-
                 </RelativeLayout>
 
 
