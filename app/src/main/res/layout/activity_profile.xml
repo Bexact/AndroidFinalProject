@@ -8,7 +8,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+
+        >
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="300dp"
@@ -154,7 +156,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="20dp"
+            android:padding="30dp"
             android:orientation="vertical">
 
             <com.google.android.material.textfield.TextInputLayout
@@ -227,10 +229,12 @@
                 ></Button>
 
         </LinearLayout>
+
         <androidx.coordinatorlayout.widget.CoordinatorLayout
 
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:paddingTop="30dp"
             tools:context=".MainActivity">
 
             <com.google.android.material.bottomappbar.BottomAppBar
@@ -262,5 +266,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
-</LinearLayout>
+
+    </LinearLayout>
+
 </ScrollView>
