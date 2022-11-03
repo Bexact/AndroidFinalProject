@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#050503"
+    tools:context=".TitleFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="248dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/photo_2022_10_13_10_21_37" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="346dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="The Only Productivity App you need"
+        android:textColor="#F9CE05"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/buttonsignin"
+        android:layout_width="149dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="128dp"
+        android:background="#EAE1E1"
+        android:backgroundTint="#FDFCFC"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textColorHighlight="#F8CD05"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:rippleColor="#00EDE5E5"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/buttonregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#F8F4F4"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Register"
+        android:textColor="#F8CD05"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonsignin"
+        app:layout_constraintVertical_bias="0.516" />
+</FrameLayout>
