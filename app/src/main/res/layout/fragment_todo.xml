@@ -35,6 +35,6 @@
         android:layout_below="@id/tasksText"
         android:layout_marginTop="47dp"
         android:nestedScrollingEnabled="true"
-        android:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+         />
 
 </FrameLayout>
