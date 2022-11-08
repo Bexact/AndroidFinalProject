@@ -22,5 +22,10 @@ class MainActivity : AppCompatActivity() {
                 .navController
 
         bottomNavigation.setupWithNavController(navController)
+
+        binding.fab.setOnClickListener{
+            navController.navigateUp()
+            navController.navigate(R.id.todoFragment)
+        }
     }
 }

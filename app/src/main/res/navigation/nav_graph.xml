@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_homeFragment_to_introFragment"
-            app:destination="@id/introFragment" />
+            app:destination="@id/todoFragment" />
         <action
             android:id="@+id/action_homeFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
@@ -23,7 +23,7 @@
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
-        android:id="@+id/introFragment"
+        android:id="@+id/todoFragment"
         android:name="com.example.projectproductivity.IntroFragment"
         android:label="fragment_todo"
         tools:layout="@layout/fragment_todo" />
