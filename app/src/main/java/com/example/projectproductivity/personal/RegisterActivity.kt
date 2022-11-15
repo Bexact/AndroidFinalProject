@@ -1,4 +1,4 @@
-package com.example.projectproductivity
+package com.example.projectproductivity.personal
 
 import android.content.Intent
 import android.os.Bundle

@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.projectproductivity.databinding.ActivityIntroBinding
+import com.example.projectproductivity.personal.LoginActivity
+import com.example.projectproductivity.personal.RegisterActivity
 
 class IntroActivity : AppCompatActivity() {
     lateinit var binding: ActivityIntroBinding
