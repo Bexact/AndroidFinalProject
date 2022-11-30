@@ -5,8 +5,10 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.projectproductivity.MainActivity
 import com.example.projectproductivity.databinding.ActivityRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
+
 
 class RegisterActivity : AppCompatActivity(){
     lateinit var binding: ActivityRegisterBinding
