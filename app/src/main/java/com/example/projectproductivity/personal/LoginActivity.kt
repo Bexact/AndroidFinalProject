@@ -1,10 +1,12 @@
-package com.example.projectproductivity
+package com.example.projectproductivity.personal
 
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.projectproductivity.MainActivity
+import com.example.projectproductivity.personal.RegisterActivity
 import com.example.projectproductivity.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 

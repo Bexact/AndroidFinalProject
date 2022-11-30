@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.projectproductivity.HomeFragment"
+        android:name="com.example.projectproductivity.ui.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -19,12 +19,61 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.projectproductivity.ProfileFragment"
+        android:name="com.example.projectproductivity.ui.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/todoFragment"
-        android:name="com.example.projectproductivity.IntroFragment"
+        android:name="com.example.projectproductivity.TodoFragment"
         android:label="fragment_todo"
-        tools:layout="@layout/fragment_todo" />
+        tools:layout="@layout/fragment_todo" >
+        <action
+            android:id="@+id/action_todoFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/introActivity"
+        android:name="com.example.projectproductivity.IntroActivity"
+        android:label="activity_intro"
+        tools:layout="@layout/activity_intro" />
+    <activity
+        android:id="@+id/registerActivity"
+        android:name="com.example.projectproductivity.personal.RegisterActivity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.projectproductivity.personal.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/todoFragment2"
+        android:name="com.example.projectproductivity.TodoFragment"
+        android:label="TodoFragment" />
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.example.projectproductivity.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_profileFragment2"
+            app:destination="@id/profileFragment2" />
+        <action
+            android:id="@+id/action_homeFragment2_to_todoFragment2"
+            app:destination="@id/todoFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.example.projectproductivity.ui.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.projectproductivity.ui.AddFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_todoFragment"
+            app:destination="@id/todoFragment" />
+    </fragment>
 </navigation>

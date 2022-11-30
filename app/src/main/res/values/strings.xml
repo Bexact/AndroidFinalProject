@@ -26,4 +26,9 @@
     <string name="register">Register</string>
     <string name="already_have_an_account">Already Have an Account?</string>
     <string name="Register">Register</string>
+    <string-array name="priorities">
+        <item>High Priority</item>
+        <item>Medium Priority</item>
+        <item>Low Priority</item>
+    </string-array>
 </resources>
