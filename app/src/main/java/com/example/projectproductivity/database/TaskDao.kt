@@ -1,5 +1,6 @@
 package com.example.projectproductivity.database
 
+import android.content.ClipData
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
@@ -24,4 +25,7 @@ interface TaskDao {
 
     @Query("SELECT * FROM task_table ORDER BY timestamp DESC")
     fun getAllTaks():LiveData<List<TaskEntry>>
+
+    @Query("SELECT * FROM task_table WHERE id = :id")
+    fun getItemById(id: Int): TaskEntry
 }

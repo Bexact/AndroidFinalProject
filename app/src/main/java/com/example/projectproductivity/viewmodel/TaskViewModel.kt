@@ -1,6 +1,7 @@
 package com.example.projectproductivity.viewmodel
 
 import android.app.Application
+import android.content.ClipData
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
@@ -44,5 +45,9 @@ public class TaskViewModel(application: Application) : AndroidViewModel(applicat
             repository.deleteAll()
         }
     }
-
+    fun getItemById(id: Int){
+        viewModelScope.launch(Dispatchers.IO){
+            repository.getItemById(id = id)
+        }
+    }
 }
